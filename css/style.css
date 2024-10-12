@@ -96,7 +96,6 @@ textarea {
     margin-bottom: 8rem;
   }
 }
-
 .heading-sec__mb-med {
   margin-bottom: 9rem;
 }
@@ -105,7 +104,6 @@ textarea {
     margin-bottom: 8rem;
   }
 }
-
 .heading-sec__main {
   display: block;
   font-size: 4rem;
@@ -129,7 +127,7 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #16b900;
+  background: #23bb15;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -139,7 +137,6 @@ textarea {
     top: calc(100% + 1.2rem);
   }
 }
-
 .heading-sec__sub {
   display: block;
   text-align: center;
@@ -194,13 +191,13 @@ textarea {
   font-size: 1.6rem;
 }
 .btn--theme {
-  background: #16b900;
+  background: #23bb15;
   color: #fff;
 }
 .btn--theme-inv {
-  color: #16b900;
+  color: #23bb15;
   background: #fff;
-  border: 2px solid #16b900;
+  border: 2px solid #23bb15;
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
 }
@@ -233,12 +230,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(
-      to bottom,
-      rgba(118, 194, 108, 0.8),
-      rgb(22, 185, 0, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(35, 187, 21, 0.8), rgba(35, 187, 21, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -319,7 +311,7 @@ textarea {
 }
 
 .about {
-  background: #fafafa;
+  background: rgb(250, 250, 250);
 }
 .about__content {
   display: grid;
@@ -384,7 +376,8 @@ textarea {
 .projects__row-img {
   width: 100%;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .projects__row-content {
   padding: 2rem 0;
@@ -422,12 +415,7 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(
-      to bottom,
-      rgba(118, 194, 108, 0.8),
-      rgb(22, 185, 0, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(35, 187, 21, 0.8), rgba(35, 187, 21, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
 }
@@ -468,7 +456,7 @@ textarea {
   color: #333;
   padding: 2rem;
   width: 100%;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgb(235, 235, 235);
   font-size: 1.6rem;
   letter-spacing: 0px;
   background: #f0f0f0;
@@ -480,6 +468,11 @@ textarea {
   /* Code for Microsoft Edge */
   /* Code for Mozilla Firefox 4 to 18 */
   /* Code for Mozilla Firefox 19+ */
+}
+.contact__form-input::-moz-placeholder {
+  color: #999;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 .contact__form-input::placeholder {
   color: #999;
@@ -526,12 +519,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(
-      to bottom,
-      rgba(118, 194, 108, 0.8),
-      rgb(22, 185, 0, 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(35, 187, 21, 0.8), rgba(35, 187, 21, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -580,28 +568,42 @@ textarea {
     font-size: 2.4rem;
   }
 }
-
 .project-details__showcase-img-cont {
   width: 100%;
   margin-bottom: 6rem;
 }
-
 .project-details__showcase-img {
   width: 100%;
 }
-
-.video-film {
+.project-details__showcase-img-4 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+  margin: 6rem auto;
+}
+.project-details__showcase-mariage {
   width: 100%;
   height: auto;
-  margin: auto;
+  -webkit-filter: brightness(50%);
 }
-
+.project-details__showcase-mariage:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  -webkit-filter: brightness(100%);
+}
+.project-details__showcase-vid-cont {
+  width: 100%;
+  height: auto;
+  margin-bottom: 6rem;
+}
+.project-details__showcase-vid {
+  width: 100%;
+}
 .project-details__content-main {
   width: 100%;
   max-width: 70rem;
   margin: auto;
 }
-
 .project-details__desc {
   margin: 0 0 7rem 0;
 }
@@ -611,7 +613,6 @@ textarea {
   color: grey;
   margin-bottom: 2rem;
 }
-
 .project-details__tools-used {
   margin: 0 0 7rem 0;
 }
@@ -629,7 +630,6 @@ textarea {
   font-weight: 600;
   color: #777;
 }
-
 .project-details__links {
   margin: 0 0;
 }
@@ -651,6 +651,29 @@ textarea {
   .project-details__links-btn:last-child {
     margin: 0;
   }
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+figcaption {
+  font-size: 1.5rem;
+  margin-top: 0.1rem;
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+}
+
+.vue-ensemble {
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.lien-sl {
+  -webkit-text-decoration: underline red;
+          text-decoration: underline red;
 }
 
 .header {
@@ -680,7 +703,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__logo-container:hover {
-  color: #16b900;
+  color: #23bb15;
 }
 .header__logo-img-cont {
   width: 5rem;
@@ -688,7 +711,7 @@ textarea {
   border-radius: 50px;
   overflow: hidden;
   margin-right: 1.5rem;
-  background: #16b900;
+  background: #23bb15;
 }
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
@@ -700,8 +723,10 @@ textarea {
 .header__logo-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   display: block;
 }
 .header__logo-sub {
@@ -729,7 +754,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__link:hover {
-  color: #16b900;
+  color: #23bb15;
 }
 @media only screen and (max-width: 56.25em) {
   .header__link {
@@ -789,7 +814,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__sm-menu-link a:hover {
-  color: #16b900;
+  color: #23bb15;
 }
 .header__sm-menu-link:first-child a {
   border-top: 1px solid #eee;
@@ -909,13 +934,6 @@ textarea {
 }
 
 @keyframes wheel {
-  to {
-    opacity: 0;
-    top: 27px;
-  }
-}
-
-@-webkit-keyframes wheel {
   to {
     opacity: 0;
     top: 27px;

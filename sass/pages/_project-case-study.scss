@@ -63,9 +63,26 @@
   &__showcase-img {
     width: 100%;
   }
+  &__showcase-img-4 {
+    display: grid;
+    grid-template-columns: repeat(2, auto); 
+    gap: 1rem; 
+    margin: 6rem auto;
+  }
+  
+  &__showcase-mariage {
+    width: 100%; 
+    height: auto;
+    -webkit-filter: brightness(50%);
+  }
+  &__showcase-mariage:hover {
+    transform: scale(1.05); 
+    cursor: pointer; 
+    -webkit-filter: brightness(100%);
+}
 
   &__showcase-vid-cont {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin-bottom: 6rem;
   }
@@ -73,6 +90,7 @@
   &__showcase-vid {
     width: 100%;
   }
+
   &__content-main {
     width: 100%;
     max-width: 70rem;
@@ -124,4 +142,26 @@
       }
     }
   }
+}
+
+iframe{
+  width: 100%;
+  height: 50vh;
+}
+
+figcaption {
+  font-size: 1.5rem; 
+  margin-top: 0.1rem; 
+  text-align: left; 
+  color: #333; 
+  font-weight: bold; 
+}
+
+.vue-ensemble{
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.lien-sl{
+  text-decoration: underline red  ;
 }
