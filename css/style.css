@@ -737,6 +737,7 @@ figcaption {
 }
 .header__links {
   display: flex;
+  
 }
 @media only screen and (max-width: 37.5em) {
   .header__links {
